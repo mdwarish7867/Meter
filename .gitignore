@@ -1,48 +1,6 @@
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-*.pyc
-*$py.class
 
-# Environment variables
-.env
-*.env
-
-# Virtual environment
 venv/
 env/
 .venv/
 .env.bak/
 env.bak/
-
-# Django stuff:
-*.log
-*.pot
-*.pyc
-db.sqlite3
-media/
-staticfiles/
-
-# Migrations (optional — keep if you want them tracked)
-# **NOTE:** If you want migration history in git, remove this block
-*/migrations/*
-!*/migrations/__init__.py
-
-# IDE / Editor settings
-.vscode/
-.idea/
-*.swp
-
-# Byte-compiled / optimized / DLL files
-*.so
-
-# OS-generated files
-.DS_Store
-Thumbs.db
-
-# Render/Heroku files
-*.pid
-*.seed
-*.db
