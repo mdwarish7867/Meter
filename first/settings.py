@@ -25,12 +25,18 @@ SECRET_KEY = 'django-insecure-or9r=y2bc64$qdazulp^87@w&jjx_%_8%ds$@e8#&78=uix+5!
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ['matrimonial-website.onrender.com','https://meter-j92z.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = [
+    'matrimonial-website.onrender.com',
+    'meter-j92z.onrender.com', #remove this line
+    'localhost', 
+    '127.0.0.1'
+]
 
 CSRF_TRUSTED_ORIGINS = [
     "https://matrimonial-website.onrender.com",
     'https://meter-j92z.onrender.com',
-    'http://127.0.0.1:8000'
+    'https://127.0.0.1:8000',
+    "http://localhost:8000"
 ]
 
 
@@ -49,6 +55,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
