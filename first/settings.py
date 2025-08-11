@@ -25,10 +25,11 @@ SECRET_KEY = 'django-insecure-or9r=y2bc64$qdazulp^87@w&jjx_%_8%ds$@e8#&78=uix+5!
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ['matrimonial-website.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['matrimonial-website.onrender.com','https://meter-j92z.onrender.com', 'localhost', '127.0.0.1']
 
 CSRF_TRUSTED_ORIGINS = [
     "https://matrimonial-website.onrender.com",
+    'https://meter-j92z.onrender.com',
     'http://127.0.0.1:8000'
 ]
 
